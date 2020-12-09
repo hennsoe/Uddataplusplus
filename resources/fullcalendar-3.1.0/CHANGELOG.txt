@@ -1,3 +1,11 @@
+v3.0.0 (2020-12-09)
+-------------------
+- hennsoe adapted code
+- fixed scroll bug on Firefox
+- added support for new all.uddataplus.dk
+- removed Herobrine
+- Edited text for clarity
+
 
 v3.1.0 (2016-12-05)
 -------------------
