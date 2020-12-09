@@ -30,8 +30,12 @@ Link to the original download firefox addon file [here](https://github.com/Benja
  - Show a cached version of the schedule on the downtime page
 
 ### Installation
-
-An installation guide for the plugin can be found at the [Github Wiki Page](https://github.com/Benjadahl/UddataPlus-Plus/wiki/Install-guide)
+#### Installation on Chromium based browsers
+ - To install this extension enable developer mode in your browser, found on <chrome://extensions/> for Google Chrome
+ - Select "Load Unpackaged" and select the clone of the main branch.
+#### Installation on Firefox
+ - On <about:addons> select the gear icon and choose "Install extension from file..."
+ - Select the clone of the main branch.
 
 ### Roadmap
 Old road map can be found at the original [Github Wiki Page](https://github.com/Benjadahl/UDPlus-Plus/wiki/Roadmap)
