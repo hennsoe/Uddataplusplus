@@ -33,6 +33,11 @@ Link to the original download firefox addon file [here](https://github.com/Benja
 #### Installation on Chromium based browsers
  - To install this extension enable developer mode in your browser, found on <chrome://extensions/> for Google Chrome
  - Select "Load Unpackaged" and select the clone of the main branch.
+
+Google Chrome cannot load .zip packaged clones, unpack and chose the unpacked version.
+If it says anything about the manifest just dive one directory deeper and load again.
+Ignore fails in the application gecko - it is for Firefox....
+
 #### Installation on Firefox
  - On <about:addons> select the gear icon and choose "Install extension from file..."
  - Select the clone of the main branch.
