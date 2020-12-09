@@ -4,11 +4,11 @@
 }
 
 .list-left {
-	max-height: calc(100% - 203px);
+	max-height: calc(100vh - 203px);
 }
 
 .list-right {
-	max-height: calc(100% - 174px);
+	max-height: calc(100vh - 174px);
 
 }
 
