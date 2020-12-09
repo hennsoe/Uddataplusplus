@@ -1,0 +1,121 @@
+{
+	"manifest_version": 2,
+
+	"name": "UD++",
+	"description": "An extension that makes the experience of using Uddata+ better - hennsoe",
+	"version": "3.0.0",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"options_ui":{
+		"page": "options/options.html",
+		"chrome_style": true
+	},
+	"applications": {
+		"gecko": {
+			"id": "hennsoe@gmail.com"
+		}
+	},
+	"icons":{
+		"16":"resources/icons/icon16.png",
+		"19":"resources/icons/icon19.png",
+		"48":"resources/icons/icon48.png",
+		"128":"resources/icons/icon128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16":"resources/icons/icon16.png",
+			"19":"resources/icons/icon19.png",
+			"48":"resources/icons/icon48.png",
+			"128":"resources/icons/icon128.png"
+		},
+		"default_title": "UD++ Dashboard"
+	},
+	"permissions": [
+		"activeTab",
+		"http://admsys.stil.dk/",
+		"notifications",
+		"https://storage.googleapis.com/",
+		"*://*.uddataplus.dk/*",
+		"storage",
+		"tabs",
+		"unlimitedStorage",
+		"downloads"
+	],
+	"background":{
+		"scripts":["storageHandler.js", "resources/jquery-3.1.0.min.js", "resources/fullcalendar-3.1.0/lib/moment.min.js", "UD++Functions.js", "background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches":[
+				"*://all.uddataplus.dk/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js", "resources/jquery.snow.min.1.0.js","storageHandler.js","theming/objectDefine.js","theming/objects.js","UD++Functions.js","theming/runTheme.js","main.js","themes.js"],
+			"css": ["resources/customclasses.css"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/skema/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/schedule.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/opgave/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/assignmentPage.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/ressourcer/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/resources.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/besked/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/message.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/?id=id_start*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/start.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/bevis/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/grades.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://all.uddataplus.dk/besked/*"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","pageScripts/conversations.js","resources/jquery.snow.min.1.0.js"],
+			"run_at": "document_end"
+		},
+
+		{
+			"matches":[
+				"*://www.uddata.dk/uddataplus-lukket/"
+			],
+			"js": ["resources/jquery-3.1.0.min.js","storageHandler.js","theming/objectDefine.js","theming/objects.js","UD++Functions.js", "themes.js", "theming/runTheme.js", "pageScripts/uddata-down.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches":[
+				"*://www.uddata.dk/uddataplus-nede/"
+			],
+			"js": ["resources/jquery-3.1.0.min.js", "storageHandler.js","theming/objectDefine.js","theming/objects.js","UD++Functions.js", "themes.js", "theming/runTheme.js", "pageScripts/uddata-down.js"],
+			"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": ["resources/UddataLogo.png", "storageHandler.js", "UD++Functions.js", "resources/xmasHat.png", "resources/customclasses.css", "resources/icons/icon48.png", "resources/Inddata.png"]
+}
