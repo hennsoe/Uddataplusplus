@@ -39,8 +39,7 @@ If it says anything about the manifest just dive one directory deeper and load a
 Ignore fails in the application gecko - it is for Firefox....
 
 #### Installation on Firefox
- - On <about:addons> select the gear icon and choose "Install extension from file..."
- - Select the clone of the main branch.
+ - Install via [AOG]<https://addons.mozilla.org/firefox/addon/udpp/>
 
 ### Roadmap
 Old road map can be found at the original [Github Wiki Page](https://github.com/Benjadahl/UDPlus-Plus/wiki/Roadmap)
