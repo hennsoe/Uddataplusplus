@@ -12,13 +12,6 @@ A Chrome extension for the web platform [Uddata+](https://www.uddataplus.dk).
 
 It aims to enhance the experience of using the platform. By enabling community requested features.
 
-### Download
-
-Link to the original chrome plugin page for the Chrome Webstore [here](https://chrome.google.com/webstore/detail/ud++/pmlnbmnelhhofakfihcfjiemklhncdin?hl=da&authuser=1)
-
-Link to the original download firefox addon file [here](https://github.com/Benjadahl/UDPlus-Plus/releases/download/V2.3.2/ud-2.3.2.xpi)
-
-
 ### Features
  - Colour theming
  - Custom colour themes
@@ -31,16 +24,18 @@ Link to the original download firefox addon file [here](https://github.com/Benja
 
 ### Installation
 #### Installation on Chromium based browsers
- - To install this extension enable developer mode in your browser, found on <chrome://extensions/> for Google Chrome
- - Select "Load Unpackaged" and select the clone of the main branch.
+ - To install this extension enable developer mode in your browser, found on [chrome://extensions/](chrome://extensions/) for Google Chrome
+ - Drag 'n' drop the .zip file from the [latest release](https://github.com/hennsoe/Uddataplusplus/releases) into the extensions tab.
 
-Google Chrome cannot load .zip packaged clones, unpack and chose the unpacked version.
-If it says anything about the manifest just dive one directory deeper and load again.
-Ignore fails in the application gecko - it is for Firefox....
-
+The general name for the extensions tab seems to be [broswername]://extensions/
 #### Installation on Firefox
  - Install via [AOG](https://addons.mozilla.org/firefox/addon/udpp/)
 
 ### Roadmap
 Old road map can be found at the original [Github Wiki Page](https://github.com/Benjadahl/UDPlus-Plus/wiki/Roadmap)
 
+### Outdated downloads
+
+Link to the original chrome plugin page for the Chrome Webstore [here](https://chrome.google.com/webstore/detail/ud++/pmlnbmnelhhofakfihcfjiemklhncdin?hl=da&authuser=1)
+
+Link to the original download firefox addon file [here](https://github.com/Benjadahl/UDPlus-Plus/releases/download/V2.3.2/ud-2.3.2.xpi)
