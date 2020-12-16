@@ -11,7 +11,7 @@ describe("Grades PageScript", function() {
 			}
 		});
 		var creating = chrome.tabs.create({
-			url: "https://www.uddataplus.dk/bevis/?id=id_karakterervis",
+			url: "https://all.uddataplus.dk/bevis/?id=id_karakterervis",
 			active: false,
 		}, function(tab) {
 			chrome.tabs.executeScript(tab.id, {code: "setTimeout(function() { chrome.runtime.sendMessage({action: 'testing', page: 'grades', sendDOM: document.all[0].outerHTML}); window.close(); }, 10000);"});
