@@ -47,7 +47,7 @@ function UDDateToDate(date) {
 	var second = parseInt(time[2]);
 
 	var danishTZ = getDanishTimezone(new Date(date));
-	hour = hour - danishTZ;
+	hour = hour + danishTZ - 01;
 	/*
 	if (hour > 24) {
 		hour = hour - 24;
