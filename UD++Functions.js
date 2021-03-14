@@ -132,8 +132,17 @@ function getSchedule(startDate, endDate, callback) {
 
 				//The note
 				if (typeof data["note2Map"][skemabeg_id] !== "undefined") {
-					returnClass["Note"] = data["note2Map"][skemabeg_id]["lektie_tekst"];
+					if(data["note2Map"][skemabeg_id]["lektie_tekst"] !== "" && data["note2Map"][skemabeg_id]["note_tekst"] !== ""){
+					returnClass["Note"] = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_tekst"] + '<br><b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					} else if(data["note2Map"][skemabeg_id]["note_tekst"] !== ""){
+					returnClass["Note"] = '<b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
+					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					} else if(data["note2Map"][skemabeg_id]["lektie_tekst"] !== ""){
+					returnClass["Note"] = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_tekst"]
+					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					}
+					
 				}
 
 
