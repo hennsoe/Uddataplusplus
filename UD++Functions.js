@@ -132,7 +132,7 @@ function getSchedule(startDate, endDate, callback) {
 
 				//The note
 				if (typeof data["note2Map"][skemabeg_id] !== "undefined") {
-					returnClass["Note"] = data["note2Map"][skemabeg_id]["tekst"];
+					returnClass["Note"] = data["note2Map"][skemabeg_id]["lektie_tekst"];
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
 				}
 
