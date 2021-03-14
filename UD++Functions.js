@@ -47,7 +47,7 @@ function UDDateToDate(date) {
 	var second = parseInt(time[2]);
 
 	var danishTZ = getDanishTimezone(new Date(date));
-	hour = hour - danishTZ;
+	hour = hour + danishTZ - 01;
 	/*
 	if (hour > 24) {
 		hour = hour - 24;
@@ -132,7 +132,7 @@ function getSchedule(startDate, endDate, callback) {
 
 				//The note
 				if (typeof data["note2Map"][skemabeg_id] !== "undefined") {
-					returnClass["Note"] = data["note2Map"][skemabeg_id]["tekst"];
+					returnClass["Note"] = data["note2Map"][skemabeg_id]["lektie_tekst"];
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
 				}
 
