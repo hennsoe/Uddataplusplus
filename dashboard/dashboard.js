@@ -112,7 +112,10 @@ function getCalendarEvents(start, end, timezone, callback) {
 						classObj['color'] = "orange";
 						classObj.className = "noteLesson";
 					}
-
+					/*if (theClass['Harfiler'] == true) {
+						classObj['color'] = "orange";
+						classObj.className = "noteLesson";
+					}*/
 					if ((typeof theClass['Note'] !== 'undefined' && theClass['Note'] !== '')) {
 						classObj['color'] = "orange";
 						classObj.className = "noteLesson";
@@ -362,7 +365,7 @@ window.onload = function() {
 			if (obj.lang == 'dansk') {
 				lang = obj.lang
 				$('#searchHeader').text("Lektionsfiler");
-				//$('#searchBox').attr("placeholder", "Søg filer");
+				$('#searchBox').attr("placeholder", "Søg filer");
 				$('#disclaimer').text("Læg venligst mærke til at dette kun er de filer som vi har gemt. Filer bliver kun gemt når du går ind på en lektion i uddata's skema. Tryk for at skjule den her besked.");
 				$('#todo').text("Lektionsnoter");
 				$('#onlyHomeworkText').text("Vis kun ulavede lektier");

@@ -1,16 +1,68 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" src="..../resources/bootstrap-341.min.css">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+td {
+	font-family: sergoe ui;
+	font-size: 80%;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+}
+</style>
 <body>
 	<script src="../resources/jscolor.min.js"></script>
+	<!--<script src="../resources/jquery-351.min.js"></script>
+	<script src="../resources/bootstrap-341.min.js"></script>*/-->
 	<h1>Uddata++ Indstillinger</h1>
 	<p style="color:#ff2020"><i>Du skal måske genlade uddata+ siden før at nogle af ændringerne træder i kraft.</i></p>
-	<h3>Forklaring</h3>
-		<li style="color: blue">Normal letion</li>
+	<div class="container">
+	<!--<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Forklaring</button>-->
+	<h2>Forklaring</h2>
+	<div id="demo" class="collapse">
+	<table>
+		<tr><td>
+		<li style="color: blue">Normal lektion</li>
 		<li style="color: red">Lektion med lektie</li>
 		<li style="color: orange">Lektion med note</li>
 		<li style="color: green">Virtuel lektion</li>
 		<li style="color: brown">Virtuel lektion med note</li>
+		<br></td>
+		</tr>
+		<tr><td><li>→: Næste dag/uge</li></td></tr>
+					<tr><td><li>←: Sidste dag/uge</li></td></tr>
+					<tr><td><li>T: Idag</li></td></tr>
+					<tr><td><li>↓/j: Gå en note ned</li></td></tr>
+					<tr><td><li>↑/k: Gå en note op</li></tr>
+					<tr><td><li>M: Marker lektie som lavet</li></td></tr>
+					<tr><td><li>L: Toggle vis kun lektier</li></td></tr>
+					<tr><td><li>1-9(Når søgefeltet ikke er i fokus): Åben fil 1-9 i valgt note</li></td></tr>
+					<tr><td><li>S: Fokuser søgefelt</li></td></tr>
+					<tr><td><li>1-9(Når søgefeltet er i fokus): Åben result 1-9 af søgning</li></td></tr>
+					<tr><td><li>W: Ugevisning</li></td></tr>
+					<tr><td><li>D: Dagsvisning</li></td></tr>
+					<tr><td><li>A: Agenda visning</li></td></tr>
+					<tr><td><li>O: Åben UD++ Settings</li></td></tr>
+					<tr><td><li>B: Åben afleveringer</li></td></tr>
+					<tr><td><li>C: Åben samtaler</li></td></tr>
+					<tr><td><li>R: Åben ressourcer</li></td></tr>
+					<tr><td><li>H: Vis denne menu</li></td></tr>
+	</table>
+	</div>
+	</div>
 	<div id="saved" hidden style="background-color:green;color:white;">Indstillinger gemt</div>
 	<h3>Farve tema</h3>
 	<p style="display:inline">Valgt tema</p>
@@ -68,4 +120,5 @@
 	<script src="../resources/jquery-3.1.0.min.js"></script>
 	<script src="../storageHandler.js"></script>
 	<script src="options.js"></script>
+
 </body>

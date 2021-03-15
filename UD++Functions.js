@@ -131,16 +131,36 @@ function getSchedule(startDate, endDate, callback) {
 				}
 
 				//The note
+				//Both note and homework
 				if (typeof data["note2Map"][skemabeg_id] !== "undefined") {
-					if(data["note2Map"][skemabeg_id]["lektie_tekst"] !== "" && data["note2Map"][skemabeg_id]["note_tekst"] !== ""){
-					returnClass["Note"] = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_tekst"] + '<br><b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
+					if(data["note2Map"][skemabeg_id]["lektie_html"] !== "" && data["note2Map"][skemabeg_id]["note_html"] !== ""){
+					//remove new lines and text font
+					var notat = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_html"] + '<br><b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_html"]
+					var notat = notat.replace(/\n/gi,'');
+					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					//return note
+					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					//only note
 					} else if(data["note2Map"][skemabeg_id]["note_tekst"] !== ""){
-					returnClass["Note"] = '<b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
+					var notat = '<b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
+					var notat = notat.replace(/\n/gi,'');
+					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					//return note
+					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
 					} else if(data["note2Map"][skemabeg_id]["lektie_tekst"] !== ""){
-					returnClass["Note"] = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_tekst"]
+					//Remove new lines and text font
+					var notat = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_html"];
+					var notat = notat.replace(/\n/gi,'');
+					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					//return the note
+					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					
+					/*//Clas has file
+					returnClass["Harfiler"] = data["note2Map"][skemabeg_id]["hasFiles"];
+					*/
 					}
 					
 				}
