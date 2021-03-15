@@ -157,6 +157,10 @@ function getSchedule(startDate, endDate, callback) {
 					//return the note
 					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
+					
+					/*//Clas has file
+					returnClass["Harfiler"] = data["note2Map"][skemabeg_id]["hasFiles"];
+					*/
 					}
 					
 				}
