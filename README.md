@@ -2,7 +2,7 @@
 This version of UD++ has been edited by hennsoe to accomodate for the changes made on uddata from 7th December to 9th December 2020, where the platform moved from <https://www.uddataplus.dk/> to <https://all.uddataplus.dk>
 I am not in anyway affiliated with Benjadahl or any of the other original contributors: jbjjbjjbj, viktorstrate, RasmusRendal
 
-This version is only updated for the recent changes made on uddata (Dec, 2020)
+Updated for Mar, 2021
 # UD++
 ![UD++ logo](./resources/icons/icon48.png)
 
@@ -24,12 +24,9 @@ It aims to enhance the experience of using the platform. By enabling community r
 
 ### Installation
 #### Installation on Chromium based browsers
- - To install this extension enable developer mode in your browser, found on [chrome://extensions/](chrome://extensions/) for Google Chrome
- - Drag 'n' drop the .zip file from the [latest release](https://github.com/hennsoe/Uddataplusplus/releases) into the extensions tab.
-
-The general name for the extensions tab seems to be [broswername]://extensions/
+ - Install  via [Chrome Webshop](https://chrome.google.com/webstore/detail/ud%20%20/nakbpdhfebbeoagbglgddgjjlhciplno)
 #### Installation on Firefox
- - Install via [AOG](https://addons.mozilla.org/firefox/addon/udpp/)
+ - Install via [Firefox ADD-ONS](https://addons.mozilla.org/firefox/addon/udpp/)
 
 ### Roadmap
 Old road map can be found at the original [Github Wiki Page](https://github.com/Benjadahl/UDPlus-Plus/wiki/Roadmap)
