@@ -100,7 +100,7 @@
 			],
 			"js": ["resources/jquery-3.1.0.min.js","pageScripts/conversations.js","resources/jquery.snow.min.1.0.js"],
 			"run_at": "document_end"
-		},
+		}
 	],
 	"web_accessible_resources": ["resources/UddataLogo.png", "storageHandler.js", "UD++Functions.js", "resources/xmasHat.png", "resources/customclasses.css", "resources/icons/icon48.png", "resources/Inddata.png"]
 }
