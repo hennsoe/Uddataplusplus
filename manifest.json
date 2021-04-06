@@ -3,7 +3,7 @@
 
 	"name": "UD++",
 	"description": "An extension that makes the experience of using Uddata+ better - hennsoe",
-	"version": "3.0.2",
+	"version": "3.0.4",
 	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 	"options_ui":{
 		"page": "options/options.html",
@@ -99,21 +99,6 @@
 				"*://all.uddataplus.dk/besked/*"
 			],
 			"js": ["resources/jquery-3.1.0.min.js","pageScripts/conversations.js","resources/jquery.snow.min.1.0.js"],
-			"run_at": "document_end"
-		},
-
-		{
-			"matches":[
-				"*://www.uddata.dk/uddataplus-lukket/"
-			],
-			"js": ["resources/jquery-3.1.0.min.js","storageHandler.js","theming/objectDefine.js","theming/objects.js","UD++Functions.js", "themes.js", "theming/runTheme.js", "pageScripts/uddata-down.js"],
-			"run_at": "document_end"
-		},
-		{
-			"matches":[
-				"*://www.uddata.dk/uddataplus-nede/"
-			],
-			"js": ["resources/jquery-3.1.0.min.js", "storageHandler.js","theming/objectDefine.js","theming/objects.js","UD++Functions.js", "themes.js", "theming/runTheme.js", "pageScripts/uddata-down.js"],
 			"run_at": "document_end"
 		}
 	],

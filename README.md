@@ -2,7 +2,8 @@
 This version of UD++ has been edited by hennsoe to accomodate for the changes made on uddata from 7th December to 9th December 2020, where the platform moved from <https://www.uddataplus.dk/> to <https://all.uddataplus.dk>
 I am not in anyway affiliated with Benjadahl or any of the other original contributors: jbjjbjjbj, viktorstrate, RasmusRendal
 
-Updated for Mar, 2021
+Updated for April, 2021
+
 # UD++
 ![UD++ logo](./resources/icons/icon48.png)
 

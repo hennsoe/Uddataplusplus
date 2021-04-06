@@ -47,7 +47,7 @@ function UDDateToDate(date) {
 	var second = parseInt(time[2]);
 
 	var danishTZ = getDanishTimezone(new Date(date));
-	hour = hour + danishTZ - 01;
+	hour = hour + danishTZ -02;
 	/*
 	if (hour > 24) {
 		hour = hour - 24;
@@ -138,6 +138,7 @@ function getSchedule(startDate, endDate, callback) {
 					var notat = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_html"] + '<br><b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_html"]
 					var notat = notat.replace(/\n/gi,'');
 					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					var notat = notat.replace(/href="/gi,'target="_blank" href="');
 					//return note
 					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
@@ -146,6 +147,7 @@ function getSchedule(startDate, endDate, callback) {
 					var notat = '<b>Note:</b><br>' + data["note2Map"][skemabeg_id]["note_tekst"]
 					var notat = notat.replace(/\n/gi,'');
 					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					var notat = notat.replace(/href="/gi,'target="_blank" href="');
 					//return note
 					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
@@ -154,6 +156,7 @@ function getSchedule(startDate, endDate, callback) {
 					var notat = '<b>Lektie:</b><br>' + data["note2Map"][skemabeg_id]["lektie_html"];
 					var notat = notat.replace(/\n/gi,'');
 					var notat = notat.replace(/Helvetica Neue/gi,'Segoe UI');
+					var notat = notat.replace(/href="/gi,'target="_blank" href="');
 					//return the note
 					returnClass["Note"] = notat
 					returnClass["GoogleFiles"] = data["note2Map"][skemabeg_id]["googleFileCount"];
