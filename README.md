@@ -2,7 +2,7 @@
 This version of UD++ has been edited by hennsoe to accomodate for the changes made on uddata from 7th December to 9th December 2020, where the platform moved from <https://www.uddataplus.dk/> to <https://all.uddataplus.dk>
 I am not in anyway affiliated with Benjadahl or any of the other original contributors: jbjjbjjbj, viktorstrate, RasmusRendal
 
-This version is only updated for the recent changes made on uddata (Dec, 2020)
+Updated for April, 2021
 # UD++
 ![UD++ logo](./resources/icons/icon48.png)
 
@@ -11,13 +11,6 @@ This version is only updated for the recent changes made on uddata (Dec, 2020)
 A Chrome extension for the web platform [Uddata+](https://www.uddataplus.dk).
 
 It aims to enhance the experience of using the platform. By enabling community requested features.
-
-### Download
-
-Link to the original chrome plugin page for the Chrome Webstore [here](https://chrome.google.com/webstore/detail/ud++/pmlnbmnelhhofakfihcfjiemklhncdin?hl=da&authuser=1)
-
-Link to the original download firefox addon file [here](https://github.com/Benjadahl/UDPlus-Plus/releases/download/V2.3.2/ud-2.3.2.xpi)
-
 
 ### Features
  - Colour theming
@@ -31,17 +24,15 @@ Link to the original download firefox addon file [here](https://github.com/Benja
 
 ### Installation
 #### Installation on Chromium based browsers
- - To install this extension enable developer mode in your browser, found on <chrome://extensions/> for Google Chrome
- - Select "Load Unpackaged" and select the clone of the main branch.
-
-Google Chrome cannot load .zip packaged clones, unpack and chose the unpacked version.
-If it says anything about the manifest just dive one directory deeper and load again.
-Ignore fails in the application gecko - it is for Firefox....
-
+ - Install  via [Chrome Webshop](https://chrome.google.com/webstore/detail/ud%20%20/nakbpdhfebbeoagbglgddgjjlhciplno)
 #### Installation on Firefox
- - On <about:addons> select the gear icon and choose "Install extension from file..."
- - Select the clone of the main branch.
+ - Install via [Firefox ADD-ONS](https://addons.mozilla.org/firefox/addon/udpp/)
 
 ### Roadmap
 Old road map can be found at the original [Github Wiki Page](https://github.com/Benjadahl/UDPlus-Plus/wiki/Roadmap)
 
+### Outdated downloads
+
+Link to the original chrome plugin page for the Chrome Webstore [here](https://chrome.google.com/webstore/detail/ud++/pmlnbmnelhhofakfihcfjiemklhncdin?hl=da&authuser=1)
+
+Link to the original download firefox addon file [here](https://github.com/Benjadahl/UDPlus-Plus/releases/download/V2.3.2/ud-2.3.2.xpi)
